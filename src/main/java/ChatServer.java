@@ -12,7 +12,7 @@ public class ChatServer {
             System.out.println("Server is launching");
             socket = serverSocket.accept();
             System.out.println("Client connected");
-            new Client(socket, "Server X");
+            new Chat(socket, "Server X");
             while(true){
                 if(socket.isClosed()){
                     break;

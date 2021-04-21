@@ -10,7 +10,7 @@ public class ChatClient {
         try {
             Socket socket = new Socket(ADDRESS, PORT);
             System.out.println("Client entered");
-            new Client(socket, "Client X");
+            new Chat(socket, "Client X");
             while(true){
                 if(socket.isClosed()){
                     break;

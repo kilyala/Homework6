@@ -3,14 +3,14 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Client {
+public class Chat {
     private Scanner in;
     private Scanner input;
     private PrintWriter out;
     private Thread threadIn;
     private Thread threadOut;
 
-    public Client(Socket socket, String name) {
+    public Chat(Socket socket, String name) {
         try {
             in = new Scanner(socket.getInputStream());
             input = new Scanner(System.in);
